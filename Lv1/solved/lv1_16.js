@@ -4,7 +4,7 @@ function solution(a, b, n) {
 	let result = 0; // 콜라 먹은 총 갯수
 	while(true){
 		if(n < a){ break; }
-		full = (n / a) * b;
+		full = Math.floor(n / a) * b;
 		empty = (n % a);
 		total = full + empty;
 		n = total; 

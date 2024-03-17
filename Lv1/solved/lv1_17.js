@@ -14,7 +14,16 @@ function solution(s) {
 			result[index] = -1;
 			table[item] = index;
 		}
+
+
+		//간소화
+		const hash = {};
+		return [...s].map((item, index) => {
+			let result = hash[item] !== undefined ? i - hash[item] : -1;
+			hash[item] = index;
+			return result;
+		})
+
 	})
-	console.log(result);
 	return result;
 }
