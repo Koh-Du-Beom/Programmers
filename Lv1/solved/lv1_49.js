@@ -4,9 +4,8 @@ function solution(array, commands) {
 
 	const result = [];
 	for(cmd of commands){
-		let tmpArr = array.slice(cmd[0]-1, cmd[1]).sort();
+		let tmpArr = array.slice(cmd[0]-1, cmd[1]).sort((a, b) => a - b);
 		result.push(tmpArr[cmd[2]-1]);
 	}
-	console.log(result);
 	return result;
 }
