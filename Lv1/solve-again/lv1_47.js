@@ -1,7 +1,6 @@
 //프로그래머스 lv1 카카오인턴십 키패드누르기 
-
+// 맞긴 했으나 최적화 가능할지?
 function solution(numbers, hand) {
-	
 	
 	let keyPad = [
 		[0, 0, 0],
